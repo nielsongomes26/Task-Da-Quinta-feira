@@ -12,10 +12,7 @@ body{
 
   }
   
-  #imagem{
-    width: 200;
-    margin-bottom: 0px;
-  }
+
   form {
     text-align: left;
     display: flex;
