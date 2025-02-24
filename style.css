@@ -1,3 +1,12 @@
+@media (max-width: 768px) {
+  .container {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+  }
+}
+
 body{
     background-color: black;
 }
@@ -12,7 +21,7 @@ body{
   }
   
   #imagem{
-    width: 200x;
+    width: 200;
     margin-bottom: 0px;
   }
   form {
