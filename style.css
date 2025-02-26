@@ -1,46 +1,84 @@
-
-body{
+body {
     background-color: black;
 }
 
-.container {
+.caixa {
     color: white;
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
+}
 
-  }
-  
-
-  form {
+form {
     text-align: left;
     display: flex;
     flex-direction: column;
-    width: 300px
-    
-    
-  }
-  
-  
-  input {
+    width: 300px;
+}
+
+input {
     background-color: #333;
     color: white;
     border: none;
     border-radius: 5px;
     padding: 10px;
     margin-bottom: 15px;
-  }
-  
-  button {
+}
+
+button {
     width: 100px;
     align-self: center;
     background-color: #4CAF50;
     color: white;
-    padding: 12px 12px; 
+    padding: 12px;
     border: none;
     border-radius: 8px;
     font-size: 15px;
     cursor: pointer;
-  }
-  
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    body {
+        padding: 20px;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .caixa {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    form {
+        width: 90%;
+        max-width: 350px;
+    }
+
+    #imagem {
+        max-width: 80%;
+        height: auto;
+        margin-bottom: 20px;
+    }
+
+    input {
+        width: 100%;
+        padding: 12px;
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    #imagem {
+        max-width: 100%;
+    }
+
+    form {
+        width: 100%;
+        max-width: 320px;
+    }
+}
